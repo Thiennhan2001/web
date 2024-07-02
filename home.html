@@ -1,0 +1,1844 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ChipMart</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/images/logos/logo-icon.png" type="image/png">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/fonts/all.css">
+</head>
+
+<body>
+    <header>
+        <div class="self-info fixed-top container-fluid">
+            <div class="info p-1 float-end ">
+                <a href="trangtintuc.html" class="text-black text-decoration-none">Blog</a>
+                <a href="" class="ms-2 text-black text-decoration-none">Về ShipMart</a>
+            </div>
+        </div>
+
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-sm fixed-top b mt-4">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    <span class="logo text-uppercase p-1 text-black">Chipmart</span>
+                    <span class="text-white text-uppercase">Store</span>
+                </a>
+                <button class="navbar-toggler d-lg-none " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls=" " aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavId">
+                    <ul class="navbar-nav mt-2 mt-lg-0 text-uppercase fw-bold">
+                        <li class="nav-item ms-2">
+                            <a class="nav-link pe-2 me-1" href="#" aria-current="page">Sản phẩm <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="#">Balo thời trang</a>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="#">Balo thể thao</a>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="#">Balo du lịch</a>
+                        </li>
+                        <li class="nav-item pe-1">
+                            <a class="nav-link" href="#">Balo truyền thống</a>
+                        </li>
+                        <li class="nav-item pe-1">
+                            <a class="nav-link" href="#">Sản xuất riêng</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                id="modal">
+                                <i class="fa-solid fa-search fs-5"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link ms-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                aria-controls="offcanvasBottom">
+                                <i class="fa-solid fa-user-large fs-5"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-1">
+                            <a class="nav-link position-relative" href="cart.html">
+                                <i class="fa-solid fa-cart-shopping fs-5"></i>
+                                <span class="position-absolute fs-7 top-0 mx-1 n-c">10</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End nav -->
+
+        <!-- Modal's search form -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl ">
+                <div class="modal-content position-relative">
+                    <button type="button" class="btn-close my-5 position-absolute end-0  l me-3" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="mb-3 mt-3 k">
+                        <input type="text" class="form-control border-0 fs-5" name="" id=""
+                            placeholder="Nhập sản phẩm bạn muốn...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Model's form search -->
+
+        <!-- ============================================ ANH KIET ============================================= -->
+        <!-- Modal's login.html form -->
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel" style="background-color:white; width:900px ; margin-left: 220px;
+            margin-bottom:20px ; height: 610px; border-radius: 15px;">
+
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="float: right;margin-left: 850px;"></button>
+            </div>
+
+            <div class="offcanvas-body small">
+                <div style="width:50% ;float: left;">
+                    <h1 class="offcanvas-title mb-3" id="offcanvasBottomLabel"
+                        style="margin-left:25px; margin-top:-20px ;font-weight:bold ">
+                        Đăng nhập</h1><br>
+                    <h6 style="margin-left: 25px;margin-top: -20px; font-size:14px;" class="mb-3">
+                        Đăng nhập để
+                        không bỏ lỡ quyền lợi tích lũy và hoàn tiền </h6><br>
+                    <h6 style="margin-left: 25px; margin-top: -25px; font-size:14px;">
+                        cho bất kì đơn
+                        hàng nào.</h6><br>
+                    <h6 style="margin-left: 25px; margin-top: -10px; font-weight:
+                    bold;font-size:14px;" class="mb-3">Đăng nhập hoặc
+                        đăng ký (miễn phí)</h6><br>
+                    <img src="assets/images/products/google.png" alt="" style="margin-left: 25px;
+                    margin-top: -15px;">
+                    <img src="assets/images/products/facebook.png" alt="" style="margin-left:
+                    20px;margin-top: -15px;">
+                    <p>
+                        <hr style="width:90% ;margin-left: 20px;">
+                    </p><br>
+                    <div class="form-floating mb-3" style="margin-top: -15px;">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            style="border-radius:
+                        30px; width: 90%; height: 50px; margin-left: 20px;">
+                        <label for="floatingInput" style="margin-left: 25px; color: gray;margin-bottom: 25px;">Email/SĐT
+                            của bạn</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                            style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                        <label for="floatingPassword" style="margin-left: 25px;color: gray;margin-bottom: 25px; ">Mật
+                            Khẩu</label>
+                    </div>
+                    <button style="margin-top: 15px; width: 90%;margin-left: 20px; border-radius: 30px;"
+                        class="mb-3 kl">
+                        <span class="circle1"></span>
+                        <span class="circle2"></span>
+                        <span class="circle3"></span>
+                        <span class="circle4"></span>
+                        <span class="circle5"></span>
+                        <span class="text">Đăng nhập</span>
+                    </button><br>
+                    <a href="" style="text-decoration: none;margin-left: 25px;" data-bs-toggle="offcanvas"
+                        data-bs-target="#s">Đăng ký tài khoản mới</a> <a href="" data-bs-toggle="offcanvas"
+                        data-bs-target="#forgetpassword" style="margin-left: 140px ;text-decoration: none;">Quên mật
+                        khẩu</a>
+                    <h6 style="font-size:13px;margin-left: 25px; margin-top: 10px;">
+                        Nếu đã từng mua hàng trên Website trước đây, bạn có thể dùng</h6><br>
+                    <h6 style="font-size:13px; margin-top: -25px;margin-left: 25px;">
+                        tính năng <a href="" data-bs-toggle="offcanvas" data-bs-target="#getpassword">"Đổi mật
+                            khẩu"</a>để có thể
+                        truy cập vào Coolmate.</h6>
+                </div>
+
+                <div style="float:right ; width: 400px; height: 50%;margin-top: -10px; border-radius: 10px;">
+                    <img data-v-50600dc0="" src="https://mcdn.coolmate.me/image/September2023/mceclip0_49.jpg" alt=""
+                        style="width: 400px ; border-radius: 10px;">
+                </div>
+
+            </div>
+        </div>
+        <!-- Emd Model's login.html form -->
+
+        <!-- Modal's logup.html form -->
+        <div class="wrapper-logup">
+            <div class="boxleft">
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="s" aria-labelledby="offcanvasBottomLabel"
+                    style="background-color:white; width:900px ; margin-left: 220px;
+                margin-bottom:20px ; height: 610px; border-radius: 15px;">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close kl" data-bs-dismiss="offcanvas" aria-label="Close"
+                            style="float: right;margin-left: 850px;"></button>
+                    </div>
+
+                    <div class="offcanvas-body small">
+                        <div style="width:50% ;float: left;">
+                            <h1 class="offcanvas-title" id="offcanvasBottomLabel"
+                                style="margin-left:25px; margin-top:-20px ;font-weight:bold ;">
+                                Đăng Ký</h1><br>
+                            <h6 style="margin-left: 25px;margin-top: -20px; font-size:14px;">
+                                Đăng nhập để không bỏ lỡ quyền lợi tích lũy và hoàn tiền </h6><br>
+                            <h6 style="margin-left: 25px; margin-top: -25px; font-size:14px;">
+                                cho bất kì đơn hàng nào.</h6><br>
+                            <h6 style="margin-left: 25px; margin-top: -10px; font-weight:
+                        bold;font-size:14px;">Đăng nhập
+                                hoặc
+                                đăng ký (miễn phí)</h6><br>
+                            <img src="assets/images/products/google.png" alt="" style="margin-left: 25px;
+                        margin-top: -15px;">
+                            <img src="assets/images/products/facebook.png" alt="" style="margin-left:
+                        20px;margin-top: -15px;">
+                            <p>
+                                <hr style="width:90% ;margin-left: 20px;">
+                            </p><br>
+
+
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingName" placeholder="name"
+                                    style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                                <label for="floatingName"
+                                    style="margin-left: 25px;color: gray;margin-bottom: 25px; ">Tên
+                                    của
+                                    bạn</label>
+                            </div>
+
+                            <div class="form-floating" style="margin-top: 10px;">
+                                <input type="email" class="form-control" id="floatingSĐT" placeholder="SĐT"
+                                    style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                                <label for="floatingSĐT" style="margin-left: 25px;color: gray;margin-bottom: 25px; ">SĐT
+                                    của
+                                    bạn</label>
+                            </div>
+
+                            <div class="form-floating" style="margin-top: 10px;">
+                                <input type="email" class="form-control" id="floatingEmail"
+                                    placeholder="name@example.com"
+                                    style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                                <label for="floatingEmail"
+                                    style="margin-left: 25px;color: gray;margin-bottom: 25px; ">Email
+                                    của
+                                    bạn</label>
+                            </div>
+
+                            <div class="form-floating" style="margin-top: 10px;">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                    style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                                <label for="floatingPassword"
+                                    style="margin-left: 25px;color: gray;margin-bottom: 25px; ">Mật
+                                    khẩu</label>
+                            </div>
+
+                            <div class="form-floating" style="margin-top: 10px;">
+                                <input type="password" class="form-control" id="floatingNhaplaiPassword"
+                                    placeholder="Password"
+                                    style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                                <label for="floatingNhaplaiPassword"
+                                    style="margin-left: 25px;color: gray;margin-bottom: 25px; ">Nhập lại mật
+                                    khẩu</label>
+                            </div>
+
+
+                            <button style="margin-top: 15px; width: 90%;margin-left: 20px; border-radius: 30px;"
+                                class="mb-3 kl">
+                                <span class="circle1"></span>
+                                <span class="circle2"></span>
+                                <span class="circle3"></span>
+                                <span class="circle4"></span>
+                                <span class="circle5"></span>
+                                <span class="text">Đăng ký</span>
+                            </button><br>
+                            <a href="" style="text-decoration: none;margin-left: 25px;" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom">Đăng nhập</a>
+                            <a href="" style="margin-left: 200px ;text-decoration: none;">Quên mật khẩu</a>
+                            <h6 style="font-size:13px;margin-left: 25px; margin-top: 10px;">
+                                Nếu đã từng mua hàng trên Website trước đây, bạn có thể dùng</h6><br>
+                            <h6 style="font-size:13px; margin-top: -25px;margin-left: 25px;">
+                                tính năng <a href="">"Đổi mật khẩu"</a> để có thể truy cập vào Coolmate.</h6>
+                        </div>
+
+                        <div style="float:right ; width: 400px; height: 50%;margin-top: -10px; border-radius: 10px;">
+                            <img data-v-50600dc0="" src="https://mcdn.coolmate.me/image/September2023/mceclip0_49.jpg"
+                                alt="" style="width: 400px ; border-radius: 10px;">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Emd Model's logup.html form -->
+
+        <!-- ============================================ NHAT TIEN ============================================= -->
+
+        <!-- Modal's quenmatkhau.html form -->
+        <div class="wrapper-change-password">
+            <div class="offcanvas offcanvas-bottom" tabindex="1" id="forgetpassword"
+                aria-labelledby="offcanvasBottomLabel" style="background-color:white; width:900px ; margin-left: 300px;
+            margin-bottom:230px ; height: 400px; border-radius: 15px;">
+
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                        style="float: right;margin-left: 850px;"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    <h2 style="text-align: center;">Quên mật khẩu</h2>
+                    <div class="">
+                        <form>
+                            <div class="mb-3">
+                                <label class="text-black mt-3 mb-3" for="">NHẬP GMAIL</label>
+                                <input class="form-control" type="text">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="text-black mt-3 mb-3 text-uppercase">NHẬP mật khẩu mới</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="text-black mt-3 mb-3 text-uppercase">xác nhận mật khẩu
+                                            mới</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-btn d-flex justify-content-center mt-4">
+                                <div class="col-"> <button type="submit" class="btn btn-dark me-2">Lấy lại mật
+                                        khẩu</button></div>
+                                <div class="col-"><button type="reset" class="btn btn-primary"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Về đăng
+                                        nhập</button></div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Emd Model's quenmatkhau.html form -->
+
+        <!-- Modal's doimatkhau.html form -->
+        <div class="container-getpassword">
+            <div class="offcanvas offcanvas-bottom" tabindex="1" id="getpassword" aria-labelledby="offcanvasBottomLabel"
+                style="background-color:white; width:900px ; margin-left: 300px;
+        margin-bottom:230px ; height: 400px; border-radius: 15px;">
+
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                        style="float: right;margin-left: 850px;"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    <h2 class="text-center">Lấy mật khẩu</h2>
+                    <div class="">
+                        <form>
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="text-black mt-3 mb-3" for="">NHẬP GMAIL</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="text-black mt-3 mb-3 text-uppercase">NHẬP mật khẩu mới</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="text-black mt-3 mb-3 text-uppercase">NHẬP mật khẩu mới</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="text-black mt-3 mb-3 text-uppercase">xác nhận mật khẩu
+                                            mới</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-btn d-flex justify-content-center mt-4">
+                                <div class="col-"> <button type="submit" class="btn btn-dark me-2">Lấy lại mật
+                                        khẩu</button></div>
+                                <div class="col-"><button type="reset" class="btn btn-primary"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Về đăng
+                                        nhập</button></div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Emd Model's doimatkhau.html form -->
+    </header>
+    <main>
+        <div class="collections container-fluid mb-3">
+            <div class="row">
+                <div class="col-6">
+                    <img src="assets/images/products/superbanner.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-6">
+                    <h3>SALE CHẤN ĐỘNG - CẢ THÁNG</h3>
+                    <h5>Chương trình áp dụng mua tại tất cả chi nhánh và Online</h5>
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <a href="chitiet.html"><img src="assets/images/products/1.jpg" alt="" class="w-100"></a>
+                                <div class="mb-1 mt-2">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <h5 class="card-title">
+                                    <del class="me-0">300.000</del>
+                                    <span class="text-danger">200.000 VND</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <a href="chitiet.html"> <img src="assets/images/products/16.jpg" alt=""
+                                        class="w-100"></a>
+                                <div class="mb-1 mt-2">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <h5 class="card-title">
+                                    <del class="me-0">300.000</del>
+                                    <span class="text-danger">200.000 VND</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <a href="chitiet.html"> <img src="assets/images/products/11.jpg" alt=""
+                                        class="w-100"></a>
+                                <div class="mb-1 mt-2">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <h5 class="card-title">
+                                    <del class="me-0">300.000</del>
+                                    <span class="text-danger">200.000 VND</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <a href="chitiet.html"><img src="assets/images/products/12.jpg" alt=""
+                                        class="w-100"></a>
+                                <div class="mb-1 mt-2">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <h5 class="card-title">
+                                    <del class="me-0">300.000</del>
+                                    <span class="text-danger">200.000 VND</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <a href="chitiet.html"><img src="assets/images/products/13.jpg" alt=""
+                                        class="w-100"></a>
+                                <div class="mb-1 mt-2">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <h5 class="card-title">
+                                    <del class="me-0">300.000</del>
+                                    <span class="text-danger">200.000 VND</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <a href="chitiet.html"><img src="assets/images/products/14.jpg" alt=""
+                                        class="w-100"></a>
+                                <div class="mb-1 mt-2">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <h5 class="card-title">
+                                    <del class="me-0">300.000</del>
+                                    <span class="text-danger">200.000 VND</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End collections -->
+
+        <div class="container-fluid hot-product mb-5">
+            <div class="card mt-5 border-0">
+                <h3 class="fw-bold mt-3">Sản phẩm mới</h3>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card product border-0 position-relative  overflow-hidden">
+                            <div class="c body">
+                                <img src="assets/images/products/5.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Simple PVC</a>
+                                <span class="d-block text-light-gray">Đen / Xám</span>
+                                <span class="d-block fw-bold">300.000 VND</span>
+                                <span class="text-light-gray">Mua 1 tặng 2 tính tiền 3</span>
+                            </div>
+                            <a class="text-black text-decoration-none ">
+                                <div class="card text-dark card-item choose-size">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <img src="assets/images/products/2.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Racing Speech</a>
+                                <span class="d-block text-light-gray">Đen / Trắng</span>
+                                <span class="d-block fw-bold">420.000 VND</span>
+                                <span class="text-light-gray">Chống sốc tốt có tặng sạc</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <img src="assets/images/products/3.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo CUDURA Sim PVC</a>
+                                <span class="d-block text-light-gray">Đen / Trắng</span>
+                                <span class="d-block fw-bold">500.000 VND</span>
+                                <span class="text-light-gray">Mua tặng miếng lót chuột</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <img src="assets/images/products/4.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Y10 Capo PVC</a>
+                                <span class="d-block text-light-gray">Đen / Trắng</span>
+                                <span class="d-block fw-bold">100.000 VND</span>
+                                <span class="text-light-gray">Free ship nội thành</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Hot product -->
+
+        <div class="banner mb-5">
+            <a href="">
+                <img src="assets/images/products/1.png" alt="" class="w-100">
+            </a>
+        </div>
+        <!-- End banner -->
+
+        <div class="container-fluid more-option mb-5">
+            <div class="card mt-5 border-0">
+                <h3 class="fw-bold mt-3">Balo - túi</h3>
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <div class="card product border-0 position-relative  overflow-hidden">
+                            <div class="c body">
+                                <img src="assets/images/products/6.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo N-09 Simple PVC</a>
+                                <span class="d-block text-light-gray">Đen / Microfiber</span>
+                                <span class="d-block fw-bold">360.000 VND</span>
+                                <span class="text-light-gray">Free ship nột thành</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <img src="assets/images/products/7.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Quỷ thần Asuma</a>
+                                <span class="d-block text-light-gray">Đen / Trắng</span>
+                                <span class="d-block fw-bold">490.000 VND</span>
+                                <span class="text-light-gray">Chống nước tốt có tặng sạc</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <img src="assets/images/products/8.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Kalgan limited </a>
+                                <span class="d-block text-light-gray">Đen</span>
+                                <span class="d-block fw-bold">900.000 VND</span>
+                                <span class="text-light-gray">Giảm 50% khi mua 2 sản phẩm trở lên</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <img src="assets/images/products/9.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo M8-JS Kim</a>
+                                <span class="d-block text-light-gray">Đen / Trắng / Xanh Na uy</span>
+                                <span class="d-block fw-bold">100.000 VND</span>
+                                <span class="text-light-gray">Free ship ngoại thành</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card product border-0 position-relative  overflow-hidden">
+                            <div class="c body">
+                                <img src="assets/images/products/11.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Y-10 20210</a>
+                                <span class="d-block text-light-gray">Đen / Xám</span>
+                                <span class="d-block fw-bold">390.000 VND</span>
+                                <span class="text-light-gray">Free ship miền nam</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <img src="assets/images/products/12.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Quỷ thần Asuma</a>
+                                <span class="d-block text-light-gray">Đen / Trắng</span>
+                                <span class="d-block fw-bold">490.000 VND</span>
+                                <span class="text-light-gray">Chống nước tốt có tặng sạc</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <img src="assets/images/products/13.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Yummy Press </a>
+                                <span class="d-block text-light-gray">Nâu / Vàng</span>
+                                <span class="d-block fw-bold">1.000.000 VND</span>
+                                <span class="text-light-gray">Giảm 10% khi mua sản phẩm</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <img src="assets/images/products/14.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo MasterDitch YP-9</a>
+                                <span class="d-block text-light-gray">Đen </span>
+                                <span class="d-block fw-bold">220.000 VND</span>
+                                <span class="text-light-gray">Free ship ngoại thành</span>
+                            </div>
+                            <a class=" text-decoration-none text-black">
+                                <div class="card choose-size text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <a class="btn btn-light text-black" href="chitiet.html"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End more option -->
+
+        <div class="scroll-top scroll-container">
+            <a class="bg-primary text-white rounded-pill p-1 text-decoration-none px-2" href="#top"><i
+                    class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <!-- End scroll top -->
+
+        <div class="sale-banner mb-5 position-relative overflow-hidden">
+            <a href="#" class="anti-theft ">
+                <img src="assets/images/products/15.jpg" class="w-100" alt="">
+            </a>
+            <button class="btn btn-outline-light buy-now position-absolute px-4 py-3">Mua ngay</button>
+        </div>
+        <!-- End sale banner -->
+
+        <div class="product-standard container-fluid mb-5">
+            <div class="card mt-5 border-0">
+                <h3 class="fw-bold mt-3 mb-5 text-uppercase">Sản phẩm đáng mua trong tháng</h3>
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <div class="card product border-0 position-relative  overflow-hidden">
+                            <div class="c body">
+                                <a href="">
+                                    <img src="assets/images/products/16.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo N-09 Simple PVC</a>
+                                <span class="d-block text-light-gray">Đen / Microfiber</span>
+                                <span class="d-block fw-bold">360.000 VND</span>
+                                <span class="text-light-gray">Free ship nột thành</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/7.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Quỷ thần Asuma</a>
+                                <span class="d-block text-light-gray">Đen / Trắng</span>
+                                <span class="d-block fw-bold">490.000 VND</span>
+                                <span class="text-light-gray">Chống nước tốt có tặng sạc</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/8.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Kalgan limited </a>
+                                <span class="d-block text-light-gray">Đen</span>
+                                <span class="d-block fw-bold">900.000 VND</span>
+                                <span class="text-light-gray">Giảm 50% khi mua 2 sản phẩm trở lên</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/9.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo M8-JS Kim</a>
+                                <span class="d-block text-light-gray">Đen / Trắng / Xanh Na uy</span>
+                                <span class="d-block fw-bold">100.000 VND</span>
+                                <span class="text-light-gray">Free ship ngoại thành</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <div class="card product border-0 position-relative  overflow-hidden">
+                            <div class="c body">
+                                <a href="">
+                                    <img src="assets/images/products/11.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Y-10 20210</a>
+                                <span class="d-block text-light-gray">Đen / Xám</span>
+                                <span class="d-block fw-bold">390.000 VND</span>
+                                <span class="text-light-gray">Free ship miền nam</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/12.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Quỷ thần Asuma</a>
+                                <span class="d-block text-light-gray">Đen / Trắng</span>
+                                <span class="d-block fw-bold">490.000 VND</span>
+                                <span class="text-light-gray">Chống nước tốt có tặng sạc</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/13.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Yummy Press </a>
+                                <span class="d-block text-light-gray">Nâu / Vàng</span>
+                                <span class="d-block fw-bold">1.000.000 VND</span>
+                                <span class="text-light-gray">Giảm 10% khi mua sản phẩm</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/14.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo MasterDitch YP-9</a>
+                                <span class="d-block text-light-gray">Đen </span>
+                                <span class="d-block fw-bold">220.000 VND</span>
+                                <span class="text-light-gray">Free ship ngoại thành</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <div class="card product border-0 position-relative  overflow-hidden">
+                            <div class="c body">
+                                <a href="">
+                                    <img src="assets/images/products/12.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Y-10 20210</a>
+                                <span class="d-block text-light-gray">Đen / Xám</span>
+                                <span class="d-block fw-bold">390.000 VND</span>
+                                <span class="text-light-gray">Free ship miền nam</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/12.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Quỷ thần Asuma</a>
+                                <span class="d-block text-light-gray">Đen / Trắng</span>
+                                <span class="d-block fw-bold">490.000 VND</span>
+                                <span class="text-light-gray">Chống nước tốt có tặng sạc</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/13.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Yummy Press </a>
+                                <span class="d-block text-light-gray">Nâu / Vàng</span>
+                                <span class="d-block fw-bold">1.000.000 VND</span>
+                                <span class="text-light-gray">Giảm 10% khi mua sản phẩm</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/14.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo MasterDitch YP-9</a>
+                                <span class="d-block text-light-gray">Đen </span>
+                                <span class="d-block fw-bold">220.000 VND</span>
+                                <span class="text-light-gray">Free ship ngoại thành</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <div class="card product border-0 position-relative  overflow-hidden">
+                            <div class="c body">
+                                <a href="">
+                                    <img src="assets/images/products/11.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Y-10 20210</a>
+                                <span class="d-block text-light-gray">Đen / Xám</span>
+                                <span class="d-block fw-bold">390.000 VND</span>
+                                <span class="text-light-gray">Free ship miền nam</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/12.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Quỷ thần Asuma</a>
+                                <span class="d-block text-light-gray">Đen / Trắng</span>
+                                <span class="d-block fw-bold">490.000 VND</span>
+                                <span class="text-light-gray">Chống nước tốt có tặng sạc</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/13.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Yummy Press </a>
+                                <span class="d-block text-light-gray">Nâu / Vàng</span>
+                                <span class="d-block fw-bold">1.000.000 VND</span>
+                                <span class="text-light-gray">Giảm 10% khi mua sản phẩm</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/14.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo MasterDitch YP-9</a>
+                                <span class="d-block text-light-gray">Đen </span>
+                                <span class="d-block fw-bold">220.000 VND</span>
+                                <span class="text-light-gray">Free ship ngoại thành</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-6">
+                        <div class="card product-b border-0 position-relative overflow-hidden">
+                            <div class="c body">
+                                <a href="">
+                                    <img src="assets/images/products/17.jpg" class="w-100 rounded-3 mb-2 " alt="">
+                                </a>
+                                <a href="" class="position-absolute top-0 t">
+                                    <img src="assets/images/products/18.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <div class="mb-1 mt-2">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <a href="" class="text-black text-decoration-none fw-bold">450.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cart product-b border-0 position-relative overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/19.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="position-absolute t top-0">
+                                    <img src="assets/images/products/20.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <div class="mb-1 mt-2">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <a href="" class="text-black text-decoration-none fw-bold">300.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <div class="card product border-0 position-relative  overflow-hidden">
+                            <div class="c body">
+                                <a href="">
+                                    <img src="assets/images/products/11.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Y-10 20210</a>
+                                <span class="d-block text-light-gray">Đen / Xám</span>
+                                <span class="d-block fw-bold">390.000 VND</span>
+                                <span class="text-light-gray">Free ship miền nam</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/12.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Quỷ thần Asuma</a>
+                                <span class="d-block text-light-gray">Đen / Trắng</span>
+                                <span class="d-block fw-bold">490.000 VND</span>
+                                <span class="text-light-gray">Chống nước tốt có tặng sạc</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/13.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo Yummy Press </a>
+                                <span class="d-block text-light-gray">Nâu / Vàng</span>
+                                <span class="d-block fw-bold">1.000.000 VND</span>
+                                <span class="text-light-gray">Giảm 10% khi mua sản phẩm</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 product border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/14.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <a href="" class="text-black text-decoration-none fw-bold">Balo MasterDitch YP-9</a>
+                                <span class="d-block text-light-gray">Đen </span>
+                                <span class="d-block fw-bold">220.000 VND</span>
+                                <span class="text-light-gray">Free ship ngoại thành</span>
+                            </div>
+                            <a class="choose-size text-decoration-none ">
+                                <div class="card text-dark card-item">
+                                    <h5 class="fw-bolder mb-3 mt-3 mx-3">Thêm nhanh vào giỏ hàng</h5>
+                                    <div class="row mb-3 justify-content-center">
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-shopping-cart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-light text-black"><i
+                                                    class="fa fa-solid fa-info-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-6">
+                        <div class="card cover border-0 position-relative">
+                            <div class="body">
+                                <div class="discover text-uppercase position-absolute ms-4">
+                                    <h4 class="text-light">Khám phá</h4>
+                                    <h1 class="text-light fw-bold">mood booster</h1>
+                                    <h1 class="text-light fw-bold">2023</h1>
+                                    <a href=""
+                                        class="btn btn-light px-4 rounded-pill mt-5 text-decoration-none text-dark fw-bold">khám
+                                        phá ngay</a>
+                                </div>
+                                <img src="assets/images/products/cover.jpg" class="w-100 rounded-3 mb-2" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cart cover  border-0 position-relative">
+                            <div class="body">
+                                <div class="discover text-uppercase position-absolute ms-4">
+                                    <h4 class="text-light">84RISING - STREETWEAR</h4>
+                                    <h1 class="text-light fw-bold">DISNEY</h1>
+                                    <h1 class="text-light fw-bold">& FRIENDS</h1>
+                                    <a href=""
+                                        class="btn btn-light px-4 rounded-pill mt-5 text-decoration-none text-dark fw-bold">khám
+                                        phá ngay</a>
+                                </div>
+                                <img src="assets/images/products/news.jpg" class="w-100 rounded-3 mb-2" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-3">
+                        <div class="card border-0 position-relative p-dcover">
+                            <div class="body">
+                                <a href="" class="">
+                                    <img src="assets/images/products/all.jpg" class="w-100 rounded-3 mb-2" alt="">
+                                </a>
+                                <div class="discover-all  text-uppercase ">
+                                    <h6 class="text-light fw-bold">Tất cả sản phẩm</h6>
+                                    <a href=""
+                                        class="btn btn-light px-4 rounded-pill mt-3 text-decoration-none text-dark fw-bold">xem
+                                        ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart p-dcover position-relative border-0 ">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/travel.jpg" class="w-100 rounded-3 mb-2" alt=""
+                                        height="313px">
+                                </a>
+                                <div class="discover-all  text-uppercase ">
+                                    <h6 class="text-light fw-bold">Sản phầm du lịch</h6>
+                                    <a href=""
+                                        class="btn btn-light px-4 rounded-pill mt-3 text-decoration-none text-dark fw-bold">xem
+                                        ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 p-dcover border-0 position-relative ">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/gucci.jpg" class="w-100 rounded-3 mb-2" alt=""
+                                        height="313px">
+                                </a>
+                            </div>
+                            <div class="discover-all  text-uppercase">
+                                <h6 class="text-light fw-bold">Sản phẩm thời trang</h6>
+                                <a href=""
+                                    class="btn btn-light px-4 rounded-pill mt-3 ms-3 text-decoration-none text-dark fw-bold">xem
+                                    ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 p-dcover border-0 position-relative  overflow-hidden">
+                            <div class="body">
+                                <a href="">
+                                    <img src="assets/images/products/tech.jpg" class="w-100 rounded-3 mb-2" alt=""
+                                        height="313px">
+                                </a>
+                                <div class="discover-all  text-uppercase ">
+                                    <h6 class="text-light fw-bold">sản phẩm công nghệ</h6>
+                                    <a href=""
+                                        class="btn btn-light px-4 rounded-pill ms-4 mt-3 text-decoration-none text-dark fw-bold">xem
+                                        ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End standard -->
+    </main>
+    <footer>
+        <div class="container-fluid bg-dark text-white">
+            <div class="row">
+                <div class="col-4">
+                    <div class=" border-0">
+                        <h2 class="mt-4 fw-bold">ChipMart chúng tôi luôn luôn trải lòng với bạn! </h2>
+                        <div class="card-body">
+                            <p class="card-text">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ
+                                khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</p>
+                            <button class="btn btn-primary rounded-4 p-2">Đóng góp ý kiến</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="">
+                        <div class="card-body ms-5">
+                            <h5 class="card-title mt-4">Hotline</h5>
+                            <span class="d-block"><i class="fa fa-solid fa-phone "></i> 0975845376 - 0395748696 <br>
+                                (7:00 A.M -22:200
+                                P.M)</span><br>
+                            <span><i class="fa fa-solid fa-mail-bulk"></i> Email: nguyenhoangphi.hgi@gmal.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="">
+                        <div class="card-body mt-5 fs-1">
+                            <span><i class="fa-brands fa-facebook me-4"></i></span>
+                            <span><i class="fa-brands fa-instagram me-4"></i></span>
+                            <span><i class="fa-brands fa-youtube me-4"></i></span>
+                            <span><i class="fa-brands fa-twitter me-4"></i></span>
+                            <span><i class="fa-brands fa-google-plus-g me-4"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-2">
+                    <div class="">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title text- mb-3 fw-bolder">ChipMartclub</h5>
+                            <p class="card-text">Đăng ký thành viên</p>
+                            <p class="card-text">Ưu đãi & đặc quyền</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title mb-3 fw-bolder">CHÍNH SÁCH
+                            </h5>
+                            <p>Đăng ký thành viên</p>
+                            <p>Ưu đãi & đặc quyền</p>
+                            <p>Chính sách đổi trả 60 ngày</p>
+                            <p>Chính sách khuyến mãi</p>
+                            <p>Chính sách bảo mật</p>
+                            <p>Chính sách giao hàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="">
+                        <div class="card-body mt-3 ">
+                            <h5 class="card-title text- mb-3 fw-bolder">CHĂM SÓC KHÁCH HÀNG
+                            </h5>
+                            <p>Trải nghiệm mua sắm 100% hài lòng</p>
+                            <a href="FAQs.html" class="text-decoration-none text-white">
+                                <p class="mb-5">Hỏi đáp - FAQs</p>
+                            </a>
+                            <h5 class="fw-bolder mb-4">KIẾN THỨC MẶC ĐẸP</h5>
+                            <p>Hướng dẫn chọn size</p>
+                            <a href="trangtintuc.html" class="text-decoration-none text-white">
+                                <p>Blog</p>
+                            </a>
+                            <p>Group mặc đẹp sống chất</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title text-uppercase mb-3 fw-bolder">TÀI LIỆU - TUYỂN DỤNG
+                            </h5>
+                            <p>Tuyển dụng</p>
+                            <p>Đăng ký bản quyền</p>
+                            <h5 class="card-title text-uppercase mt-5 mb-3 fw-bolder">về chipmart
+                            </h5>
+                            <p>ChipMart 101</p>
+                            <p>Đăng ký bản quyền</p>
+                            <p>DVKH xuất sắc</p>
+                            <p>Khách hàng thân thiết</p>
+                            <p>Câu chuyện về Coolmate</p>
+                            <p>Nhà máy</p>
+                            <p>Care & Share</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title text-uppercase mb-3 fw-bolder">ĐỊA CHỈ LIÊN HỆ
+                            </h5>
+                            <p>Văn phòng Hà Nội: Tầng 3-4, Tòa nhà BMM,KM2,<br> Đường Phùng Hưng, Phường Phúc La,
+                                Quận Hà Đông, TP Hà Nội
+                            </p>
+                            <p>Văn phòng Tp HCM: Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ
+                                Chí Minh.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <div class="">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-9">
+                                <p class="card-text">@ CÔNG TY TNHH MF</p>
+                                <p class="card-text">Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh
+                                    nghiệp do Sở Kế hoạch và Đầu tư
+                                    TP Hà Nội cấp lần đầu ngày 20/02/2019</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="">
+                                    <div class="card-body">
+                                        <img src="assets/images/products/Coolmate-info.webp" alt="" class="me-5">
+                                        <img src="assets/images/products/logoSaleNoti.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

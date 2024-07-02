@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/webfonts">
+    <link rel="stylesheet" href="assets/fonts/all.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <style>
+        .item-wrapper {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .question {
+            background-color: #f5f5f5;
+            padding: 10px 15px;
+        }
+
+        .answer {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="self-info fixed-top container-fluid">
+            <div class="info p-1 float-end ">
+                <a href="trangtintuc.html" class="text-dark text-decoration-none">Blog</a>
+                <a href="" class="ms-2 text-dark text-decoration-none">Về ShipMart</a>
+            </div>
+        </div>
+
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-sm fixed-top b mt-4">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    <span class="logo text-uppercase p-1 text-black">Chipmart</span>
+                    <span class="text-white text-uppercase">Store</span>
+                </a>
+                <button class="navbar-toggler d-lg-none " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls=" " aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavId">
+                    <ul class="navbar-nav mt-2 mt-lg-0 text-uppercase fw-bold">
+                        <li class="nav-item ms-2">
+                            <a class="nav-link pe-2 me-1" href="#" aria-current="page">Sản phẩm <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="#">Balo thời trang</a>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="#">Balo thể thao</a>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="#">Balo du lịch</a>
+                        </li>
+                        <li class="nav-item pe-1">
+                            <a class="nav-link" href="#">Balo truyền thống</a>
+                        </li>
+                        <li class="nav-item pe-1">
+                            <a class="nav-link" href="#">Sản xuất riêng</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                id="modal">
+                                <i class="fa-solid fa-search fs-5"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link ms-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                aria-controls="offcanvasBottom">
+                                <i class="fa-solid fa-user-large fs-5"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-1">
+                            <a class="nav-link position-relative" href="cart.html">
+                                <i class="fa-solid fa-cart-shopping fs-5"></i>
+                                <span class="position-absolute fs-7 top-0 mx-1 n-c">10</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End nav -->
+
+        <!-- Modal's search form -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl ">
+                <div class="modal-content position-relative">
+                    <button type="button" class="btn-close my-5 position-absolute end-0  l me-3" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="mb-3 mt-3 k">
+                        <input type="text" class="form-control border-0 fs-5" name="" id=""
+                            placeholder="Nhập sản phẩm bạn muốn...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Model's form search -->
+
+        <!-- ============================================ ANH KIET ============================================= -->
+        <!-- Modal's login.html form -->
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel" style="background-color:white; width:900px ; margin-left: 220px;
+            margin-bottom:20px ; height: 610px; border-radius: 15px;">
+
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="float: right;margin-left: 850px;"></button>
+            </div>
+
+            <div class="offcanvas-body small">
+                <div style="width:50% ;float: left;">
+                    <h1 class="offcanvas-title mb-3" id="offcanvasBottomLabel"
+                        style="margin-left:25px; margin-top:-20px ;font-weight:bold ">
+                        Đăng nhập</h1><br>
+                    <h6 style="margin-left: 25px;margin-top: -20px; font-size:14px;" class="mb-3">
+                        Đăng nhập để
+                        không bỏ lỡ quyền lợi tích lũy và hoàn tiền </h6><br>
+                    <h6 style="margin-left: 25px; margin-top: -25px; font-size:14px;">
+                        cho bất kì đơn
+                        hàng nào.</h6><br>
+                    <h6 style="margin-left: 25px; margin-top: -10px; font-weight:
+                    bold;font-size:14px;" class="mb-3">Đăng nhập hoặc
+                        đăng ký (miễn phí)</h6><br>
+                    <img src="assets/images/products/google.png" alt="" style="margin-left: 25px;
+                    margin-top: -15px;">
+                    <img src="assets/images/products/facebook.png" alt="" style="margin-left:
+                    20px;margin-top: -15px;">
+                    <p>
+                        <hr style="width:90% ;margin-left: 20px;">
+                    </p><br>
+                    <div class="form-floating mb-3" style="margin-top: -15px;">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            style="border-radius:
+                        30px; width: 90%; height: 50px; margin-left: 20px;">
+                        <label for="floatingInput" style="margin-left: 25px; color: gray;margin-bottom: 25px;">Email/SĐT
+                            của bạn</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                            style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                        <label for="floatingPassword" style="margin-left: 25px;color: gray;margin-bottom: 25px; ">Mật
+                            Khẩu</label>
+                    </div>
+                    <button style="margin-top: 15px; width: 90%;margin-left: 20px; border-radius: 30px;"
+                        class="mb-3 kl">
+                        <span class="circle1"></span>
+                        <span class="circle2"></span>
+                        <span class="circle3"></span>
+                        <span class="circle4"></span>
+                        <span class="circle5"></span>
+                        <span class="text">Đăng nhập</span>
+                    </button><br>
+                    <a href="" style="text-decoration: none;margin-left: 25px;" data-bs-toggle="offcanvas"
+                        data-bs-target="#s">Đăng ký tài khoản mới</a> <a href="" data-bs-toggle="offcanvas"
+                        data-bs-target="#forgetpassword" style="margin-left: 140px ;text-decoration: none;">Quên mật
+                        khẩu</a>
+                    <h6 style="font-size:13px;margin-left: 25px; margin-top: 10px;">
+                        Nếu đã từng mua hàng trên Website trước đây, bạn có thể dùng</h6><br>
+                    <h6 style="font-size:13px; margin-top: -25px;margin-left: 25px;">
+                        tính năng <a href="" data-bs-toggle="offcanvas" data-bs-target="#getpassword">"Đổi mật
+                            khẩu"</a>để có thể
+                        truy cập vào Coolmate.</h6>
+                </div>
+
+                <div style="float:right ; width: 400px; height: 50%;margin-top: -10px; border-radius: 10px;">
+                    <img data-v-50600dc0="" src="https://mcdn.coolmate.me/image/September2023/mceclip0_49.jpg" alt=""
+                        style="width: 400px ; border-radius: 10px;">
+                </div>
+
+            </div>
+        </div>
+        <!-- Emd Model's login.html form -->
+
+        <!-- Modal's logup.html form -->
+        <div class="wrapper-logup">
+            <div class="boxleft">
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="s" aria-labelledby="offcanvasBottomLabel"
+                    style="background-color:white; width:900px ; margin-left: 220px;
+                margin-bottom:20px ; height: 610px; border-radius: 15px;">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close kl" data-bs-dismiss="offcanvas" aria-label="Close"
+                            style="float: right;margin-left: 850px;"></button>
+                    </div>
+
+                    <div class="offcanvas-body small">
+                        <div style="width:50% ;float: left;">
+                            <h1 class="offcanvas-title" id="offcanvasBottomLabel"
+                                style="margin-left:25px; margin-top:-20px ;font-weight:bold ;">
+                                Đăng Ký</h1><br>
+                            <h6 style="margin-left: 25px;margin-top: -20px; font-size:14px;">
+                                Đăng nhập để không bỏ lỡ quyền lợi tích lũy và hoàn tiền </h6><br>
+                            <h6 style="margin-left: 25px; margin-top: -25px; font-size:14px;">
+                                cho bất kì đơn hàng nào.</h6><br>
+                            <h6 style="margin-left: 25px; margin-top: -10px; font-weight:
+                        bold;font-size:14px;">Đăng nhập
+                                hoặc
+                                đăng ký (miễn phí)</h6><br>
+                            <img src="assets/images/products/google.png" alt="" style="margin-left: 25px;
+                        margin-top: -15px;">
+                            <img src="assets/images/products/facebook.png" alt="" style="margin-left:
+                        20px;margin-top: -15px;">
+                            <p>
+                                <hr style="width:90% ;margin-left: 20px;">
+                            </p><br>
+
+
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingName" placeholder="name"
+                                    style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                                <label for="floatingName"
+                                    style="margin-left: 25px;color: gray;margin-bottom: 25px; ">Tên
+                                    của
+                                    bạn</label>
+                            </div>
+
+                            <div class="form-floating" style="margin-top: 10px;">
+                                <input type="email" class="form-control" id="floatingSĐT" placeholder="SĐT"
+                                    style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                                <label for="floatingSĐT" style="margin-left: 25px;color: gray;margin-bottom: 25px; ">SĐT
+                                    của
+                                    bạn</label>
+                            </div>
+
+                            <div class="form-floating" style="margin-top: 10px;">
+                                <input type="email" class="form-control" id="floatingEmail"
+                                    placeholder="name@example.com"
+                                    style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                                <label for="floatingEmail"
+                                    style="margin-left: 25px;color: gray;margin-bottom: 25px; ">Email
+                                    của
+                                    bạn</label>
+                            </div>
+
+                            <div class="form-floating" style="margin-top: 10px;">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                    style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                                <label for="floatingPassword"
+                                    style="margin-left: 25px;color: gray;margin-bottom: 25px; ">Mật
+                                    khẩu</label>
+                            </div>
+
+                            <div class="form-floating" style="margin-top: 10px;">
+                                <input type="password" class="form-control" id="floatingNhaplaiPassword"
+                                    placeholder="Password"
+                                    style="border-radius: 30px; height: 50px; width: 90%;margin-left: 20px;">
+                                <label for="floatingNhaplaiPassword"
+                                    style="margin-left: 25px;color: gray;margin-bottom: 25px; ">Nhập lại mật
+                                    khẩu</label>
+                            </div>
+
+
+                            <button style="margin-top: 15px; width: 90%;margin-left: 20px; border-radius: 30px;"
+                                class="mb-3 kl">
+                                <span class="circle1"></span>
+                                <span class="circle2"></span>
+                                <span class="circle3"></span>
+                                <span class="circle4"></span>
+                                <span class="circle5"></span>
+                                <span class="text">Đăng ký</span>
+                            </button><br>
+                            <a href="" style="text-decoration: none;margin-left: 25px;" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom">Đăng nhập</a>
+                            <a href="" style="margin-left: 200px ;text-decoration: none;">Quên mật khẩu</a>
+                            <h6 style="font-size:13px;margin-left: 25px; margin-top: 10px;">
+                                Nếu đã từng mua hàng trên Website trước đây, bạn có thể dùng</h6><br>
+                            <h6 style="font-size:13px; margin-top: -25px;margin-left: 25px;">
+                                tính năng <a href="">"Đổi mật khẩu"</a> để có thể truy cập vào Coolmate.</h6>
+                        </div>
+
+                        <div style="float:right ; width: 400px; height: 50%;margin-top: -10px; border-radius: 10px;">
+                            <img data-v-50600dc0="" src="https://mcdn.coolmate.me/image/September2023/mceclip0_49.jpg"
+                                alt="" style="width: 400px ; border-radius: 10px;">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Emd Model's logup.html form -->
+
+        <!-- ============================================ NHAT TIEN ============================================= -->
+
+        <!-- Modal's quenmatkhau.html form -->
+        <div class="wrapper-change-password">
+            <div class="offcanvas offcanvas-bottom" tabindex="1" id="forgetpassword"
+                aria-labelledby="offcanvasBottomLabel" style="background-color:white; width:900px ; margin-left: 300px;
+            margin-bottom:230px ; height: 400px; border-radius: 15px;">
+
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                        style="float: right;margin-left: 850px;"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    <h2 style="text-align: center;">Quên mật khẩu</h2>
+                    <div class="">
+                        <form>
+                            <div class="mb-3">
+                                <label class="text-black mt-3 mb-3" for="">NHẬP GMAIL</label>
+                                <input class="form-control" type="text">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="text-black mt-3 mb-3 text-uppercase">NHẬP mật khẩu mới</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="text-black mt-3 mb-3 text-uppercase">xác nhận mật khẩu
+                                            mới</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-btn d-flex justify-content-center mt-4">
+                                <div class="col-"> <button type="submit" class="btn btn-dark me-2">Lấy lại mật
+                                        khẩu</button></div>
+                                <div class="col-"><button type="reset" class="btn btn-primary"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Về đăng
+                                        nhập</button></div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Emd Model's quenmatkhau.html form -->
+
+        <!-- Modal's doimatkhau.html form -->
+        <div class="container-getpassword">
+            <div class="offcanvas offcanvas-bottom" tabindex="1" id="getpassword" aria-labelledby="offcanvasBottomLabel"
+                style="background-color:white; width:900px ; margin-left: 300px;
+        margin-bottom:230px ; height: 400px; border-radius: 15px;">
+
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                        style="float: right;margin-left: 850px;"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    <h2 class="text-center">Lấy mật khẩu</h2>
+                    <div class="">
+                        <form>
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="text-black mt-3 mb-3" for="">NHẬP GMAIL</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="text-black mt-3 mb-3 text-uppercase">NHẬP mật khẩu mới</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="text-black mt-3 mb-3 text-uppercase">NHẬP mật khẩu mới</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="text-black mt-3 mb-3 text-uppercase">xác nhận mật khẩu
+                                            mới</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-btn d-flex justify-content-center mt-4">
+                                <div class="col-"> <button type="submit" class="btn btn-dark me-2">Lấy lại mật
+                                        khẩu</button></div>
+                                <div class="col-"><button type="reset" class="btn btn-primary"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Về đăng
+                                        nhập</button></div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Emd Model's doimatkhau.html form -->
+    </header>
+    <div class="row g-0 text-center">
+
+        <div class="container" style="max-width: 900px;">
+            <div class="col-sm-6 col-md-2">
+                <h2> FAQs </h2>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="row g-0 text-center" style="max-width: 900px; ">
+                <h2 style="margin-left:  350px;"> CÂU HỎI THƯỜNG GẶP KHI MUA SẮM TẠI COOLMATE </h2>
+            </div>
+            <br>
+
+        </div>
+    </div>
+    <div class="container" id="main-content">
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Bao lâu từ lúc đặt hàng thì tôi có thể nhận được hàng?
+                </h4>
+            </div>
+            <div class="answer">
+                Nếu ở nội thành Hà Nội và Hồ Chí Minh, khách hàng sẽ được nhận hàng trong vòng 24h kể từ khi có cuộc gọi
+                hoặc tin nhắn xác nhận trừ trường hợp đơn chưa đủ tồn kho Coolmate sẽ gửi đi từ kho vận hành khác tỉnh
+                thì thời gian sẽ là 2-3 ngày.
+
+                Nếu ở tỉnh khác, khách hàng sẽ nhận được hàng trong 2-3 ngày.
+            </div>
+        </div>
+
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Làm thế nào để tôi có thể theo dõi đơn hàng ?
+                </h4>
+            </div>
+            <div class="answer">
+                Khách hàng có thể inbox vào fanpage Coolmate với thông tin mã đơn hàng hoặc số điện thoại đặt hàng, chăm
+                sóc khách hàng sẽ gửi đến khách hàng mã vận đơn trong thời gian sớm nhất.
+            </div>
+        </div>
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Khung giờ giao hàng của Coolmate?
+                </h4>
+            </div>
+            <div class="answer">
+                Coolmate giao giờ hành chính, một số khu vực có thể hỗ trợ giao tối cho khách hàng. Coolmate không cam
+                kết có thể hỗ trợ các trường hợp giao tối 100% tuy nhiên Coolmate chắc chắn sẽ làm mọi cách có thể hỗ
+                trợ cho khách hàng.
+            </div>
+        </div>
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Các hình thức thanh toán khi tôi mua hàng trực tiếp là gì?
+                </h4>
+            </div>
+            <div class="answer">
+                Cũng giống như mua hàng online khách hàng mua hàng tại kho có 2 hình thức để thanh toán đơn hàng: tiền
+                mặt hoặc chuyển khoản ngân hàng. Coolmate chưa áp dụng hình thức quẹt thẻ.
+
+            </div>
+        </div>
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Coolmate có cửa hàng không ?
+
+                </h4>
+            </div>
+            <div class="answer">
+                Hiện tại Coolmate không có cửa hàng. Coolmate có 2 Hub vận hành và có hỗ trợ khách hàng mua trực tiếp
+                tại Hub để có những trải nghiệm thực tế nhất
+
+            </div>
+        </div>
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Chính sách giá được áp dụng như thế nào khi tôi mua trực tiếp ?
+
+                </h4>
+            </div>
+            <div class="answer">
+                Mọi đơn hàng của khách hàng đều được tính giá như giá trên website. Khách hàng yên tâm, các mã giảm giá
+                chương trình quà tặng,... vẫn được hỗ trợ như khi đặt online.
+
+            </div>
+        </div>
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Thế nào là đơn hàng 2 chiều?
+
+                </h4>
+            </div>
+            <div class="answer">
+                Đơn hàng 2 chiều điển hình ở đơn đổi hàng ở Coolmate, khách hàng sẽ nhận hàng mới và đồng thời gửi hàng
+                đổi cho bưu tá giao hàng.
+
+
+
+            </div>
+        </div>
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Tôi đổi hàng tại kho có tính ship không ?
+                </h4>
+            </div>
+            <div class="answer">
+                Không. Coolmate luôn hỗ trợ khách hàng với trải nghiệm tốt nhất, khách hàng có thể báo với Coolmate về
+                tình trạng đổi của đơn hàng Coolmate sẽ đóng sẵn hàng khách hàng chỉ cần ghé kho và đổi hàng ngay.
+
+            </div>
+        </div>
+
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Tôi muốn huỷ đơn hàng đã thanh toán trước?
+                </h4>
+            </div>
+            <div class="answer">
+                Hiện tại Coolmate chưa thể hoàn tiền tự động cho khách hàng. Khách hàng điền thông tin ở đây hoặc inbox
+                Fanpage hoặc gọi hotline 1900272737, Coolmate sẽ hoàn lại tiền trong vòng 24h sau khi nhận được thông
+                tin.
+            </div>
+        </div>
+
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Tôi muốn thay đổi thông tin với đơn hàng đã đặt (SĐT nhận hàng, địa chỉ, hình thức thanh toán,...)
+
+                </h4>
+            </div>
+            <div class="answer">
+                Khách hàng inbox vào fanpage Coolmate hoặc gọi hotline 1900 272737 để chăm sóc khách hàng hỗ trợ thay
+                đổi thông tin đơn hàng của khách hàng. <br>
+                Riêng về việc thay đổi hình thức thanh toán từ COD sang thanh toán trước, Coolmate sẽ gởi đến khách
+                thông tin STK: <br>
+                Công ty TNHH Fastech Asia <br>
+                0691000416134 <br>
+                Vietcombank CN Tây Hà Nội <br>
+                Ngay khi nhận được thanh toán, Coolmate sẽ cập nhật lại thông tin thanh toán cho khách hàng. <br>
+            </div>
+        </div>
+
+        <div class="item-wrapper">
+            <div class="question">
+                <h4>Tôi đổi hàng tại kho có tính ship không ?
+                </h4>
+            </div>
+            <div class="answer">
+                Không. Coolmate luôn hỗ trợ khách hàng với trải nghiệm tốt nhất, khách hàng có thể báo với Coolmate về
+                tình trạng đổi của đơn hàng Coolmate sẽ đóng sẵn hàng khách hàng chỉ cần ghé kho và đổi hàng ngay.
+
+            </div>
+        </div>
+
+
+    </div>
+    <footer class="bg-dark">
+        <div class="container-fluid bg-black text-white">
+            <div class="row">
+                <div class="col-4">
+                    <div class=" border-0">
+                        <h2 class="mt-4 fw-bold">ChipMart chúng tôi luôn luôn trải lòng với bạn! </h2>
+                        <div class="card-body">
+                            <p class="card-text">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ
+                                khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</p>
+                            <button class="btn btn-primary rounded-4 p-2">Đóng góp ý kiến</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="">
+                        <div class="card-body ms-5">
+                            <h5 class="card-title mt-4">Hotline</h5>
+                            <span class="d-block"><i class="fa fa-solid fa-phone "></i> 0975845376 - 0395748696 <br>
+                                (7:00 A.M -22:200
+                                P.M)</span><br>
+                            <span><i class="fa fa-solid fa-mail-bulk"></i> Email: nguyenhoangphi.hgi@gmal.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="">
+                        <div class="card-body mt-5 fs-1">
+                            <span><i class="fa-brands fa-facebook me-4"></i></span>
+                            <span><i class="fa-brands fa-instagram me-4"></i></span>
+                            <span><i class="fa-brands fa-youtube me-4"></i></span>
+                            <span><i class="fa-brands fa-twitter me-4"></i></span>
+                            <span><i class="fa-brands fa-google-plus-g me-4"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-2">
+                    <div class="">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title text- mb-3 fw-bolder">ChipMartclub</h5>
+                            <p class="card-text">Đăng ký thành viên</p>
+                            <p class="card-text">Ưu đãi & đặc quyền</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title mb-3 fw-bolder">CHÍNH SÁCH
+                            </h5>
+                            <p>Đăng ký thành viên</p>
+                            <p>Ưu đãi & đặc quyền</p>
+                            <p>Chính sách đổi trả 60 ngày</p>
+                            <p>Chính sách khuyến mãi</p>
+                            <p>Chính sách bảo mật</p>
+                            <p>Chính sách giao hàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="">
+                        <div class="card-body mt-3 ">
+                            <h5 class="card-title text- mb-3 fw-bolder">CHĂM SÓC KHÁCH HÀNG
+                            </h5>
+                            <p>Trải nghiệm mua sắm 100% hài lòng</p>
+                            <a href="FAQs.html" class="text-decoration-none text-white">
+                                <p class="mb-5">Hỏi đáp - FAQs</p>
+                            </a>
+                            <h5 class="fw-bolder mb-4">KIẾN THỨC MẶC ĐẸP</h5>
+                            <p>Hướng dẫn chọn size</p>
+                            <a href="trangtintuc.html" class="text-decoration-none text-white">
+                                <p>Blog</p>
+                            </a>
+                            <p>Group mặc đẹp sống chất</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title text-uppercase mb-3 fw-bolder">TÀI LIỆU - TUYỂN DỤNG
+                            </h5>
+                            <p>Tuyển dụng</p>
+                            <p>Đăng ký bản quyền</p>
+                            <h5 class="card-title text-uppercase mt-5 mb-3 fw-bolder">về chipmart
+                            </h5>
+                            <p>ChipMart 101</p>
+                            <p>Đăng ký bản quyền</p>
+                            <p>DVKH xuất sắc</p>
+                            <p>Khách hàng thân thiết</p>
+                            <p>Câu chuyện về Coolmate</p>
+                            <p>Nhà máy</p>
+                            <p>Care & Share</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title text-uppercase mb-3 fw-bolder">ĐỊA CHỈ LIÊN HỆ
+                            </h5>
+                            <p>Văn phòng Hà Nội: Tầng 3-4, Tòa nhà BMM,KM2,<br> Đường Phùng Hưng, Phường Phúc La,
+                                Quận Hà Đông, TP Hà Nội
+                            </p>
+                            <p>Văn phòng Tp HCM: Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ
+                                Chí Minh.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <div class="">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-9">
+                                <p class="card-text">@ CÔNG TY TNHH MF</p>
+                                <p class="card-text">Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh
+                                    nghiệp do Sở Kế hoạch và Đầu tư
+                                    TP Hà Nội cấp lần đầu ngày 20/02/2019</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="">
+                                    <div class="card-body">
+                                        <img src="assets/images/products/Coolmate-info.webp" alt="" class="me-5">
+                                        <img src="assets/images/products/logoSaleNoti.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
